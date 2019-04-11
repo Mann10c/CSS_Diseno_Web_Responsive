@@ -22,7 +22,7 @@ img{
 .header{
   background-color: #5B7989;
   color: white;
-  margin: 0 auto;
+  margin: 0;
   text-shadow: 2px 2px 2px #02010A;
   border-radius: 10px 10px 0 0;
 }
@@ -36,8 +36,7 @@ img{
   }
   .header{
     display: flex;
-    margin: 20px;
-  }
+}
   #menu-principal{
     width: 30%;
     display: flex;
@@ -70,4 +69,111 @@ img{
     margin: 20px;
     color: white;
   }
+}
+/*Imagen Principal*/
+article.imgprincipal{
+  background: #82c3a6;
+  padding: 20px;
+  display: block;
+}
+img.imgprin{
+  width: 70vw;
+  display: block;
+  margin: auto;
+}
+/*Imagenes Secundarias*/
+article.imgsecundaria{
+  background: #d5c75f;
+  padding: 20px;
+}
+figcaption{
+  text-align: center;
+}
+/*Animacion Imagenes*/
+img.view1:hover{
+  transform: rotate(10deg);
+  box-shadow: #82C3A6;
+  border: 2px solid black;
+  transition-duration: 1s;
+}
+img.ret:hover{
+  transform: translate(20px,-5px);
+  box-shadow: #82C3A6;
+  border: 2px solid black;
+  transition-duration: 1s;
+}
+
+/*Imagenes Secundarias PC*/
+@media (min-width: 900px){
+  article.imgsecundaria{
+    display: flex;
+  }
+
+  div.imgizq{
+    width: 50%;
+  }
+  div.imgder{
+    width: 50%
+  }
+}
+figure img{
+  border: 1px solid black;
+  width: 100%
+  }
+}
+/*Imagenes Secundarias Movil*/
+@media (max-width: 899px){
+  div.imgizq{
+    width: 100%;
+    display: block;
+  }
+  div.imgder{
+    width: 100%;
+    display: block;
+  }
+}
+figure img{
+  border: 1px solid black;
+  width: 100%
+}
+/*Footer*/
+footer{
+  padding: 15px;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+.icono{
+  width: 2vw
+}
+#redes figure{
+  display: block;
+  display: inline;
+  margin: 2vw;
+}
+@media (min-width: 900px){
+  footer.pie_pagina{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  div.pie1{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+  }
+  div.pie2{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+  }
+  div.pie3{
+    width: 25%;
+  }
+
+  div.pie4{
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+  }
+
 }
