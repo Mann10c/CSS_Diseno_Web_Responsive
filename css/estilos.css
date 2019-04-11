@@ -248,3 +248,38 @@ footer{
 }
 /*Fin Paisajes*/
 /*Retratos*/
+.retratosimg {
+  margin: 0px;
+  background: #d5c75f;
+
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+}
+  .imgretrato:nth-child(1){
+    filter: blur(10px);
+  }
+  .imgretrato:nth-child(even){
+    filter: grayscale(100%);
+  }
+  .imgretrato:nth-child(3){
+    filter: sepia(90%);
+  }
+@media (min-width: 900px) {
+  .imgretrato{
+    margin: 20px;
+    width: 25%;
+    height: 25%;
+  }
+}
+@media (max-width: 899px) {
+  .imgretrato{
+    margin: 20px;
+    display: block;
+    width: 80vw;
+  }
+}
