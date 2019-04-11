@@ -5,6 +5,39 @@ body{
   margin: 0px;
   width: 100%;
 }
+/*Animaciones*/
+header{
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-name: slidein;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+}
+@-moz-keyframes slidein {
+  from{
+    margin-top: 100%
+  }
+  to{
+    margin-top: -3%
+  }
+}
+@-web-kit-keyframes slidein {
+  from{
+    margin-top: 100%
+  }
+  to{
+    margin-top: -3%
+  }
+}
+@keyframes slidein {
+  from{
+    margin-top: 100%
+  }
+  to{
+    margin-top: -3%
+  }
+}
 .contenido{
   width: 900px;
   margin-left: auto;
@@ -175,5 +208,43 @@ footer{
     margin: 10px;
     padding: 10px;
   }
-
 }
+/*Fin Index*/
+/*Paisajes*/
+.contpaisaje {
+  margin: 0px;
+  background: #d5c75f;
+
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  -webkit-display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+}
+  .imgpaisaje:nth-child(1){
+    filter: blur(10px);
+  }
+  .imgpaisaje:nth-child(even){
+    filter: grayscale(100%);
+  }
+  .imgpaisaje:nth-child(3){
+    filter: sepia(90%);
+  }
+@media (min-width: 900px) {
+  .imgpaisaje{
+    margin: 20px;
+    width: 25%;
+    height: 25%;
+  }
+}
+@media (max-width: 899px) {
+  .imgpaisaje{
+    margin: 20px;
+    display: block;
+    width: 80vw;
+  }
+}
+/*Fin Paisajes*/
+/*Retratos*/

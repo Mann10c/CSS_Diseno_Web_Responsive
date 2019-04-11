@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--meta-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
     <meta name="author" content="Manffred Gamboa Vargas">
     <meta name="keywords" content="Fotografía,Comenzando,Fotos">
     <meta name="description" content="Sitio web para fotógrafos principiantes">
-    <title>Comenzando con la Fotografía</title>
+    <!--css y fonts-->
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-
+    <!--Titulo-->
+    <title>Comenzando con la Fotografía</title>
   </head>
   <body>
-    <header>
-      <!-- Título Principal -->
-      <h1>Paisajes</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a class="activa" href="paisajes.html">Paisajes</a></li>
-          <li><a href="retratos.html">Retratos</a></li>
-
-
-
-
-        </ul>
-      </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-    <footer>
-
-    </footer>
+    <div class="contenido">
+      <!-- Título Principal y Navegación -->
+      <header class="header">
+        <h1>Comenzando con la fotografía</h1>
+        <nav id="menu-principal">
+          <a href="../index.html">Inicio</a>
+          <a class="activa" href="paisajes.html">Paisajes</a>
+          <a href="retratos.html">Retratos</a>
+        </nav>
+      </header>
+      <section>
+        <article class="contpaisaje">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+            <img class="imgpaisaje" src="../images/campo.jpg" alt="Fotos de Campo" title="Foto del Campo">
+        </article>
+      </section>
+      <footer class="pie_pagina">
+        <!--Contacto-->
+        <div class="pie1">
+          <h2>Contacto</h2>
+          <a href="mailto:mann_10c@hotmail.com?subject=Fotografía">Email:mann_10c@hotmail.com</a><br>
+          San Calos, Alajuela - Costa Rica <br>
+          Teléfono: +506 7206-3334
+        </div>
+        <!--Términos-->
+        <div class="pie2">
+          <h2>Términos</h2>
+          Aplican políticas de privacidad y condiciones de servicio.
+        </div>
+        <!--Redes Sociales-->
+        <div class="pie3">
+          <h2>Redes Sociales</h2>
+          Visita nuestas Redes <br>
+            <div id=redes>
+              <a href="https://www.facebook.com/" target="_blank">
+                <figure>
+                  <img class="icono" src="../images/facebookicon.png" alt="FB" title="icono FB">
+                </figure>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <img class="icono" src="../images/Instagramicon.png" alt="Instagram" title="icono Instagram">
+                </figure>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <figure>
+                  <img class="icono" src="../images/linkedinicon.png" alt="Linkedin" title="icono Linkedin">
+                </figure>
+              </a>
+            </div>
+        </div>     .
+        <div class="pie4">
+          <h2>Derechos</h2>
+          Manffred Gamboa Vargas © 2019 - Todos Derechos Reservados.
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
